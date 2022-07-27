@@ -27,7 +27,7 @@ const Navbar = () => {
                             key={index}
                             fontWeight='700'
                             fontFamily='Montserrat'
-                            fontSize={{base:'16px',md:'20px'}}
+                            fontSize='16px'
                             color={selected == index ? 'white' : 'grey'}
                             py="2%"
                             px='15%'>           
