@@ -10,12 +10,8 @@ const Main = ({ children, router }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <title> 100 UI challenge</title>
             </Head>
-            <Hide below="xl">
                 <SideBar />
-            </Hide>
-            <Show below='xl'>
                 <NavBar />
-            </Show>
             <Box w='100vw' overflow={{base:'auto',xl:'hidden'}} h='100vh'>
                 {children}
             </Box>

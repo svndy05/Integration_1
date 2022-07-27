@@ -6,7 +6,7 @@ const Navbar = () => {
     const { isOpen, onToggle } = useDisclosure()
     const [selected, setSelected] = useControllableState({ defaultValue: 0 })
     return (
-        <Flex w="100%"  direction='row' h='10vh' justify='space-between'  alignItems='center' px='5%'>
+        <Flex w="100%" display={{base:'flex',xl:'none'}} direction='row' h='10vh' justify='space-between'  alignItems='center' px='5%'>
             <Image
                 src='/logo.svg'
             />

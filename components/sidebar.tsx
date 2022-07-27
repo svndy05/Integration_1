@@ -4,11 +4,10 @@ const Sidebar = () => {
     const SidebarLink: String[]= ['Gear VR', 'Design', 'Display', 'Experience', 'Spec', 'Gallery']
     const [selected, setSelected] = useControllableState({defaultValue:0})
     return (
-        <Flex direction='column' w='12vw' h='100vh' justify='space-between' pl='5%' py='1.5%'>
+        <Flex direction='column' display={{base:'none',xl:'flex'}} w='12vw' h='100vh' justify='space-between' pl='5%' py='1.5%'>
             <Box>
                 <Box boxSize='100%'>
                     <Image
-                        onClick={()=>console.log('test')}
                         src='/logo.svg'
                     />
                 </Box>
